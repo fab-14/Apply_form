@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style></style>
+    <title>Form Backend With Php MySql</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <form action="submit.php" method="post" role="form">
+                <legend>
+                    <h3 align="center">
+                        <span class="label label-info">Admission Form</span>
+                    </h3>
+                </legend>
+                <h4 align="center">
+                    <span class="label label-primary">Your Personal Details</span>
+                </h4>
+                <div class="form-group col-lg-6">
+                    <label for="name">Enter Your Firstname</label>
+                    <input type="text" class="form-control has-success has-feedback" id="name" name="name" required
+                        aria-current="date" />
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="lname">Enter Your Lastname</label>
+                    <input type="text" class="form-control" id="lname" name="lname" required />
+                </div>
+                <!-- entering phone number -->
+                <div class="form-group col-lg-6">
+                    <label for="contact">Enter Your Contact No: </label>
+                    <input type="tel" class="form-control" id="contact" name="contact" pattern="[0-9]{10}" required />
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="email">Enter Your Email Here</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-required="false"
+                        placeholder="Email is not Mandetory" />
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="dateofb">Enter Your Date Of Birth</label>
+                    <input type="date" class="form-control" id="dateofb" name="dateofb" required />
+                </div>
+                <!-- selecting the course -->
+                <div class="form-group">
+                    <label for="course" class="col-sm-2"> Select Course </label>
+                    <div class="col-lg-6">
+                        <select name="course" id="course" class="form-control">
+                            <option value="IMCA">IMCA</option>
+                            <option value="BCA" selected>BCA</option>
+                            <option value="B>SC">B.SC</option>
+                            <option value="B.tech">B.Tect</option>
+                            <option value="M.tech">M.Tect</option>
+                            <option value="M.sc">M.sc</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="radio col-lg-12">
+                    <h5><strong>Choose Gender : </strong></h5>
+                    <h4>
+                        <label>
+                            <input type="radio" checked name="gen" id="gen1" value="Male" />
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gen" id="gen2"
+                            value="Female"  />
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gen" id="gen3" value="Other" />
+                            Other
+                        </label>
+                    </h4>
+                </div>
+
+                <!-- radio buttons -->
+                <div class="radio col-lg-12">
+                    <h5><strong>Choose Religion : </strong></h5>
+                    <h4>
+                        <label>
+                            <input type="radio" checked name="religion" id="rel1" value="Muslim" />
+                            Muslim
+                        </label>
+                        <label>
+                            <input type="radio" name="religion" id="rel2" value="Hindu" />
+                            Hindu
+                        </label>
+
+                        <label>
+                            <input type="radio" name="religion" id="rel3"
+                            value="Sikh" />
+                            Sikh
+                        </label>
+                        <label>
+                            <input type="radio" name="religion" id="rel3"
+                            value="Other" />
+                            Other
+                        </label>
+                    </h4>
+                </div>
+        </div>
+        <div class="container">
+            <h4 align="center">
+                <span class="label label-primary">Parentage Details</span>
+            </h4>
+            <div class="form-group col-lg-6">
+                <label for="faname">Enter Your Fathers Name</label>
+                <input type="text" class="form-control has-success has-feedback" id="faname" name="faname" required />
+            </div>
+            <div class="form-group col-lg-6">
+                <label for="moname">Enter Your Mothers Name</label>
+                <input type="text" class="form-control has-success has-feedback" id="moname" name="moname" required />
+            </div>
+            <!-- getting fathers contact no -->
+            <div class="form-group col-lg-6">
+                <label for="contact2">Enter Fathers Contact No: </label>
+                <input type="tel" class="form-control" id="contact2" name="contact2" pattern="[0-9]{10}" required />
+            </div>
+            <!-- selecting the fathers occupation -->
+            <div class="form-group">
+                <label for="occupation" class="col-sm-2"> Fathers Occupation
+                </label>
+                <div class="col-lg-6">
+                    <select name="occupation" id="occupation" class="form-control">
+                        <option value="Farmer">Farmer</option>
+                        <option value="Government Employee" selected>Govt. Employee</option>
+                        <option value="Labour">Labour</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Educational Details  -->
+        <!-- <div class="container">
+            <h4 align="center">
+                <span class="label label-primary">Educational Details</span>
+            </h4>
+            filling out educational details 
+            you can add more code i left here , but you can continue 
+        </div> -->
+        <div class="form-group col-lg-6">
+            <button type="submit" class="btn btn-primary btn-block ">
+                Submit
+            </button>
+        </div>
+        <div class="form-group col-lg-6">
+            <button type="reset" class="btn btn-primary btn-block ">Reset</button>
+        </div>
+        </form>
+
+    </div>
+
+    <br />
+    <br />
+</body>
+
+</html>
