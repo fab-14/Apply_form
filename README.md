@@ -2,6 +2,6 @@
 Web Development Project
 IF YOU LIKE IT FOLLOW US ON :
 
-FACEBOOK:  #https://www.facebook.com/profile.php?id=100065593331036
+#FACEBOOK:  https://www.facebook.com/profile.php?id=100065593331036
 
-INSTAGRAM : #https://www.instagram.com/fabc_14/
+#INSTAGRAM : #https://www.instagram.com/fabc_14/
